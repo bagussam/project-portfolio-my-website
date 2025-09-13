@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-profile.html">Our Profile</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-banner">
+            <h1>Hi <span id="display-name"></span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan yang dibuat untuk Mini Project RevoU.</p>
+        </section>
+
+        <section class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="city-container">
+                <div class="city-circle">Jakarta</div>
+                <div class="city-circle">Bandung</div>
+                <div class="city-circle">Surabaya</div>
+            </div>
+        </section>
+
+        <section id="message-us" class="message-us-section">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="message-form">
+                    <div class="form-item">
+                        <label for="input-name">Nama:</label>
+                        <input type="text" id="input-name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="input-dob">Tanggal Lahir:</label>
+                        <input type="date" id="input-dob" name="dob" required>
+                    </div>
+                    <div class="form-item">
+                        <label>Jenis Kelamin:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="gender-male" name="gender" value="Laki-laki" required>
+                            <label for="gender-male">Laki-laki</label>
+                            <input type="radio" id="gender-female" name="gender" value="Perempuan">
+                            <label for="gender-female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="input-message">Pesan:</label>
+                        <textarea id="input-message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="output-section">
+                    <p><strong>Current Time:</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama:</strong> <span id="result-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="result-dob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="result-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="result-message"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

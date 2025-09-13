@@ -1,0 +1,188 @@
+/* --- Global Styles & Fonts --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #fff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* --- Main Content Sections --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* --- Welcome Banner Section --- */
+.welcome-banner {
+    text-align: center;
+}
+
+#display-name {
+    color: #007BFF;
+}
+
+/* --- Headquarters Section --- */
+.city-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.city-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* --- Message Us Section --- */
+.form-container {
+    display: flex;
+    gap: 2rem;
+}
+
+form {
+    flex: 1; /* Form mengambil setengah bagian */
+}
+
+.form-item {
+    margin-bottom: 1rem;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.output-section {
+    flex: 1; /* Output mengambil setengah bagian */
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.output-section p {
+    margin: 0 0 1rem 0;
+}
+
+/* --- Our Profile Page Styles --- */
+.profile-banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x300') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-content h3 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    .city-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+}
